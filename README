@@ -4,8 +4,12 @@ A version of spring-module-cache that works only with EHCache.
 
 This was a result of the dependency soup that is the current state of the
 spring-modules-cache project. This is not meant to belittle or insult the work
-done on that project, rather to get this code working, particularly the
-spring-configuration cache tags, with minimal dependencies. 
+done on that project, rather to get this very useful code working, particularly 
+the spring-configuration cache tags, with minimal dependencies. 
+
+The original code base is unchanged - only the implementations supporting
+other caching providers were removed and the pom file created from scratch. Many
+thanks to the original developers of this project.  
 
 The version of EHCache supported is 1.7.2. 
 
