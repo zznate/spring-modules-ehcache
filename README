@@ -2,7 +2,7 @@ Spring Modules EHCache
 ----------------------
 A version of spring-module-cache that works only with EHCache. 
 
-This was a result of the dependency soup that resulted in the current state of
+This was a result of the dependency soup that is the current state of the
 spring-modules-cache project. This is not meant to belittle or insult the work
 done on that project, rather to get this code working, particularly the
 spring-configuration cache tags, with minimal dependencies. 
