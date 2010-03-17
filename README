@@ -13,4 +13,18 @@ thanks to the original developers of this project.
 
 The version of EHCache supported is 1.7.2. 
 
+Example Usage:
+------------
+Here is a simple usage example in a Spring configuration file in which we wrap
+a UserDao class explicitly caching the results of two methods into the same
+EHCache region:
+
+    <ehcache:proxy id="userDao" providerId="cacheProviderFacade">
+        <bean class="com.mycompany.mypackage.dao.UserDaoImpl"/>
+        <ehcache:caching methodName="getUsers"
+            cacheName="_query.userDao" />
+        <ehcache:caching methodName="getUserByEmail"
+            cacheName="_query.userDao" />
+    </ehcache:proxy>
+
 
